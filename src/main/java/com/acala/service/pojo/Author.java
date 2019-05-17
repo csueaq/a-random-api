@@ -1,17 +1,14 @@
 package com.acala.service.pojo;
 
-import java.util.List;
 
 public class Author {
 
     private String id;
     private String name;
-    private List<String> books;
 
-    public Author(String id, String name, List<String> books) {
+    public Author(String id, String name) {
         this.id = id;
         this.name = name;
-        this.books = books;
     }
 
     public String getId() {
@@ -30,11 +27,5 @@ public class Author {
         this.name = name;
     }
 
-    public List<String> getBooks() {
-        return books;
-    }
 
-    public void setBooks(List<String> books) {
-        this.books = books;
-    }
 }
